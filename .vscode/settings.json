@@ -1,0 +1,6 @@
+{
+    "nim.project": [
+        "src/sudoku.nim"
+    ],
+    "nim.runOutputDirectory": "src"
+}
