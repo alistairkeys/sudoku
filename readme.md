@@ -5,11 +5,11 @@ Each row, column and 3x3 subgrid must contain only one of each 1-9 digit.
 
 ## Dragons be here
 I will tidy this project up at some point - it's not pretty in its
-current form.
+current form and is probably broken is various ways at the mo.
 
-This project still needs a little TLC at the moment but it's not far off being
-useful. Two particularly nasty ways to break it: it saves an 'in progress'
-file but there's some infinite loop if you close the app and reopen it that I need
+This project still needs a little TLC but it's not far off being useful.
+Two particularly nasty ways to break it: it saves an 'in progress' file
+but there's some infinite loop if you close the app and reopen it that I need
 to debug. Also, using the 'Check' button behaves strangely. I'll debug these
 soon (and possibly move it to libraries I trust more, like Boxy or Raylib,
 since I always seem to have 'window not responding'-style issues with SDL2 for
@@ -44,6 +44,16 @@ the puzzle start).
 # Any other notes
 Background image:
 https://pixabay.com/photos/sudoku-logic-game-game-puzzle-pen-5844655/
+
+Don't take the framework folder too seriously: it's the bare minimum to get
+a primitive UI displaying in SDL apps and I slowly copy and paste it between
+projects. Eventually, I'll improve it.
+
+The difficulty selection works by having some preset puzzles and applying
+transformations (transposing digits, rotating the grid, etc.). Even though
+there are only a few puzzles to use, the transformations mean you won't
+notice.
+
 
 # Todo / Rainy day work:
 * Move to Boxy? Lots of possible SDL-related naffness as always
